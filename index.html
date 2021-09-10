@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>ABC YOGA</title>
+    <meta name="description" content="ヨガスタジオサイト">
+    <!-----faviconimage--------------------------------------->
+    <link rel="icon" type="image/svg+xml" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS ---------------------------------->
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+ 　　
+    <script src="./jquery-3.6.0.min.js" ></script>
+    <script src="/sugahara/script.js/script.js"></script>
+    <!-- Font Awesome ----------------------------------------------->
+    
+
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>
+                <a href="index.html">
+
+            
+                    <h1 class="top-title">ABCYOGA</h1>
+                </a>
+            </h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a class="current menu-home" href="index.html">ホーム</a></li>
+                    <li><a class="current menu-form" href="form.html">体験予約</a></li>
+                    <li><a class="menu-job" href="job.html">募集要項</a></li>
+                    <li><a class="menu-chinese-page" href="index-zh.html">日/中</a></li>
+
+                      </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <section class="home-hero wrapper">
+        <h2>さあ、一緒に始めよう。</h2>
+
+        <a href="form.html" class="btn btn-primary">初回体験無料</a>
+
+        
+          
+
+         
+    </section>
+
+    <section class="brown-bg">
+        <div class="plan-plan content flex-reverse">
+
+          <img src="images/photo-1604431696980-07e518647bec.jpg">　
+           
+            
+
+            <div class="home-text">
+                <h2 class="title">ABC YOGAについて</h2>
+                <p>
+                    　初心者の方でもヨガを楽しんでいただけるよう、<br>
+                    様々なレッスンプランをご用意しております！<br>
+                </p>
+            </div>
+
+              
+            
+        </div>
+    </section>
+
+    <section class="brown-bg plan-plan">
+               <h2 class="title">料金プラン</h2>
+                <p>お客様のライフスタイルに合わせた料金プランをご用意してます！</p>
+        
+
+
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <th scope="col">内容</th>
+                        <th scope="col">価格(月額)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>フリープラン</th>
+                        <td data-label="内容" class="txt">一番人気！営業時間内いつでもご利用可能プラン</td>
+                        <td data-label="価格" class="price">¥13,800</td>
+                    </tr>
+                    <tr>
+                        <th>モーニングプラン</th>
+                        <td data-label="内容" class="txt">営業開始から13時までのプラン</td>
+                        <td data-label="価格" class="price">¥8,600</td>
+                    </tr>
+                    <tr>
+                        <th>ナイトプラン</th>
+                        <td data-label="内容" class="txt">１３時から営業終了までのプラン</td>
+                        <td data-label="価格" class="price">¥8,800</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+   
+
+    <div class="contents plan-plan">
+        <h2 class="title">レッスン内容</h2>
+        <p>
+            　初心者の方でもヨガを楽しんでいただけるよう、<br>
+            様々なレッスンプランをご用意しております！<br>
+            ぜひ一度お越しくださいませ！
+        </p>
+
+       
+       <!-- <div>要素を追加し、「contents-item」というclassをつける -->
+       <div class="contents-item">
+           <a href="index.html">
+         <img src="images/images/2099033-795548.svg" width="200px" height="300px">
+         </a>
+         <p><strong>初心者クラス</strong></p>
+         
+       </div>
+       
+       <!-- <div>要素を追加し、「contents-item」というclassをつける -->
+       <div class="contents-item">
+        <a href="index.html">
+         <img src="images/images/2099054-795548.svg" width="200px" height="300px"> 
+        </a>
+         <p><strong>マタニティクラス</strong></p>
+       </div>
+
+       <div class="contents-item">
+        <a href="index.html">
+        <img src="images/images/2099040-795548.svg" width="200px" height="300px">
+        </a>
+        <p><strong>マスタークラス</strong></p>
+      </div>
+      
+    
+      
+       
+    </div>
+
+
+   
+         
+    <div class="cdt_wrapper">
+        <h2><span>8月入会金無料キャンペーン終了まであと</span></h2>
+
+
+        <div class="cdt">
+          <span class="cdt_txt" id="cdt_txt"></span>
+          <span class="cdt_date" id="cdt_date"></span>
+        </div>
+      </div>
+
+
+      <footer >
+        
+        <ul class="footer-nav">
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">サービス内容</a></li>
+            <li><a href="#">スタッフブログ</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+        </ul>
+        <p><small>&copy; 2021 ABCYOGA</small></p>
+    </footer>
+    
+
+
+
+
+   
+
+
+
+
+
+
+
+    <script> 
+
+    'use strict';
+    function CountdownTimer(elm, tl, mes) {
+    this.initialize.apply(this, arguments);
+  }
+  CountdownTimer.prototype = {
+    initialize: function (elm, tl, mes) {
+      this.elem = document.getElementById(elm);
+      this.tl = tl;
+      this.mes = mes;
+    },
+    countDown: function () {
+      var timer = '';
+      var today = new Date();
+      var day = Math.floor((this.tl - today) / (24 * 60 * 60 * 1000));
+      var hour = Math.floor((day * 24) + ((this.tl - today) % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+      var min = Math.floor(((this.tl - today) % (24 * 60 * 60 * 1000)) / (60 * 1000)) % 60;
+      var sec = Math.floor(((this.tl - today) % (24 * 60 * 60 * 1000)) / 1000) % 60 % 60;
+      var milli = Math.floor(((this.tl - today) % (24 * 60 * 60 * 1000)) / 10) % 100;
+      var me = this;
+  
+      if ((this.tl - today) > 0) {
+        if (hour) timer += '<span class="cdt_num">' + hour + '</span><small>時間</small>';
+        timer += '<span class="cdt_num">' + this.addZero(min) + '</span><small>分</small><span class="cdt_num">' + this.addZero(sec) + '</span><small>秒</small><span class="cdt_num">' + this.addZero(milli) + '</span>';
+        this.elem.innerHTML = timer;
+        tid = setTimeout(function () {
+          me.countDown();
+        }, 10);
+      } else {
+        this.elem.innerHTML = this.mes;
+        return;
+      }
+    },
+    addZero: function (num) {
+      return ('0' + num).slice(-2);
+    }
+  }
+  
+  // ▼ 開始＆終了日時の指定と日付の判別
+  function CDT() {
+    var myD = Date.now(); // 1970/1/1午前0時から現在までのミリ秒
+    var start = new Date('2021,8,1'); // 開始日時の指定
+    var myS = start.getTime(); // 1970/1/1午前0時からの開始日時までのミリ秒
+    var end = new Date('2021,8,31'); // 終了日時の指定
+    var myE = end.getTime(); // 1970/1/1午前0時から終了日時までのミリ秒
+  
+    // 今日が開始日前か期間中か終了日後かの判別
+    if (myS <= myD && myE >= myD) {
+      var text = '<span>終了</span><span>まで</span>';
+      var tl = end;
+    } // 期間中
+    else if (myS > myD) {
+      var text = '<span>開催</span><span>まで</span>';
+      var tl = start;
+    } // 開始日前
+    else {
+      var text = "";
+    } // 終了日後
+  
+    var timer = new CountdownTimer('cdt_date', tl, '<small>終了</small>'); // 終了日後のテキスト
+    timer.countDown();
+    target = document.getElementById("cdt_txt");
+    target.innerHTML = text;
+  }
+  window.onload = function () {
+    CDT();
+  }
+  </script>
+
+
+    
+   
+
+   
+</body>
+
+</html>

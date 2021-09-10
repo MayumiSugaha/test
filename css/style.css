@@ -1,0 +1,706 @@
+@charset 'UTF-8';
+
+/*
+GENERAL STYLING
+================================================ */
+html {
+    font-size: 100%;
+    
+}
+body {
+	color: #555;
+	font-family: sans-serif;
+
+    
+}
+
+/*
+COMMON
+================================================ */
+p,
+td {
+    line-height: 1.7;
+}
+
+
+.top-title {
+    font-family: 'Anton', sans-serif;
+
+    /* 文字の大きさを二倍する */
+    font-size: 2em;
+  
+}
+
+
+
+
+/* 全体の構成 */
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: left;
+}
+main {
+    max-width: 900px;
+    width: 94%;
+    margin: 6.25rem auto;
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+}
+.text-center {
+    text-align: right;
+    padding: 40px 30px;
+}
+
+/* Button */
+.btn {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    padding: 1.25rem 3.25rem;
+    font-size: 1.375rem;
+    width: 100%;
+}
+
+.btn-primary {
+    color: #fff;
+    background: #e6bc87;
+    text-align: right;
+}
+.btn-primary:hover {
+    background: #f7efa2;
+}
+.btn-secondary {
+    color: #555;
+    background: #d0bea2;
+}
+.btn-secondary:hover {
+    background: #f7efa2;
+}
+
+
+/* Heading */
+.title {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.title::after {
+    content: '';
+    display: flex;
+    height: 5px;
+    width: 10rem;
+    background: #d0bea2;
+    margin: 2rem 0 2.5rem;
+}
+.title-center {
+    text-align: center;
+}
+.title-center::after {
+    margin: 2.5rem auto;
+}
+
+
+
+
+
+/*
+HEADER
+================================================ */
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.main-nav {
+    display: flex;
+}
+.main-nav li {
+    text-align: center;
+    font-size: .75rem;
+}
+.logo {
+    width: 7.5rem;
+}
+.main-nav a {
+    display: block;
+    padding: .5rem;
+    width: 4rem;
+}
+.main-nav a::before {
+    display: block;
+    margin-bottom: .25rem;
+/* Font Awesome */
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    color: #555;
+    font-size: 1.25rem;
+}
+.menu-home::before {
+    content: '\f015';
+}
+.menu-job::before {
+    content: '\f1d8';
+}
+.menu-form::before {
+    content: '\f073';
+}
+.menu-chinese-page::before {
+    content: '\f0ac';
+}
+
+
+.main-nav .current {
+    background: #f8f6f2;
+}
+
+
+
+/*
+HOME
+================================================ */
+.home-hero {
+    background: url('../images/images/people-2557539__340.jpg');
+    background-repeat:  no-repeat; 
+    background-position:  right top; 
+    background-size:  70vw auto;
+    padding: 5.5rem 2rem 3rem;   
+}
+
+/*画像スライド*/
+@keyframes slide {
+    0% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.home-hero {
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+
+.home-hero h2 {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.5rem;
+    margin: 8vw 0 12vw;
+    background: rgba(255,255,255,.8);
+    padding: 1rem;
+    /* display: inline-block; */
+    text-align: left;
+       
+      
+}
+
+/*テキストコンテンツスライドイン*/
+.home-hero h2 {
+    animation: slideIn 3s ;
+  }
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(50px);
+    }
+  }
+
+.home-text {
+    text-align: left;
+}
+
+
+
+
+/*テーブルタグ--------------*/
+.plan-plan  {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+    
+}
+
+.plan-plan .title {
+    text-align: left;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 0;
+    width: 650px;
+    table-layout: fixed;
+  }
+  
+  table tr {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    padding: .35em;
+  }
+  table th,
+  table td {
+    padding: 1em 10px 1em 1em;
+    border-right: 1px solid #bbb;
+  }
+  table th {
+    font-size: .85em;
+  }
+  table thead tr{
+    background-color: #eee;
+  }
+  .txt{
+     text-align: left;
+     font-size: .85em;
+  }
+  .price{
+     text-align: right;
+  }
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+      width:100%
+    }
+    table th{
+      background-color: #eee;
+      display: block;
+      border-right: none;
+    }
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #bbb;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+      position: relative;
+      padding: .625em .625em .625em 4em;
+      border-right: none;
+    }
+    
+    table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      position: absolute;
+      left: 10px;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+
+  /*------レッスンコンテンツ------*/
+
+.contents {
+    height: 500px;
+    margin-top: 20px;
+
+  }
+  
+.section-title {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+  }
+  
+  
+ 
+.contents-item {
+    float: left;
+    margin: 0 20px;
+    
+  }
+  
+
+
+
+/*
+JOB.html
+================================================ */
+.page-job {
+    background-image: url('../images/istockphoto-1304802994-612x612.jpg'), linear-gradient(180deg, transparent 0%,transparent 50%, #F8F6F2 50%, #F8F6F2 100%);
+    background-position: left 106px, 0 0;
+    background-size: 70vw auto, contain;
+    background-repeat: no-repeat;
+}
+.page-job .btn {
+    margin-bottom: 4rem;
+}
+
+
+
+/*
+FORM.html
+================================================ */
+.page-form {
+    background-image: url('../images/istockphoto-1304802994-612x612.jpg'), linear-gradient(180deg, transparent 0%,transparent 50%, #F8F6F2 50%, #F8F6F2 100%);
+    background-position: right 106px, 0 0;
+    background-size: 70vw auto, contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Form */
+input[type='text'],
+input[type='email'],
+input[type='url'],
+select,
+textarea {
+    border: 1px solid #bbb;
+    background: #fff;
+    padding: .5rem;
+    width: 100%;
+}
+input[type='text']::placeholder,
+input[type='email']::placeholder,
+textarea::placeholder {
+    color: #bbb;
+}
+textarea {
+    height: 10rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.select-box::after {
+    display: inline-block;
+    position: absolute;
+    top: .625rem;
+    right: 1rem;
+/* Font Awesome */
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    content: '\f078';
+    color: #bbb;
+}
+
+/* デフォルトのチェックボックスを非表示 */
+input[type='checkbox'] {
+    opacity:0;
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+/* チェックボックス用の四角形を作る */
+input[type='checkbox'] + span::before {
+    display: inline-block;
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #bbb;
+    background: #fff;
+    margin: -.125rem .5rem 0 0;
+    vertical-align: middle;
+
+/* Font Awesome */
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    padding: 0 2px;
+    line-height: 1.5;
+}
+
+
+
+/*
+FOOTER
+================================================ */
+footer  {
+    background:　#e6bc87;
+    color: rgba(255,255,255,.8);
+    padding: 3.5rem 1rem;
+    text-align: center;
+    
+    
+}
+
+
+.footer-nav li {
+    margin: 1rem 0;
+}
+.footer-nav a {
+    color:#555;
+}
+
+
+   
+   
+  
+
+
+/*
+DESKTOP SIZE
+================================================ */
+@media (min-width: 600px) {
+/* Common */
+    main {
+        padding: 5rem;
+    }
+    .btn {
+        width: auto;
+    }
+    .title {
+        font-size: 1.875rem;
+    }
+
+ 
+ /* Header */
+    header .wrapper {
+        padding: 2rem 1rem;
+
+    }
+    .main-nav li {
+        margin-left: 2rem;
+        font-family: 'Sawarabi Mincho', sans-serif;
+        font-size: 1.25rem;
+    }
+    .main-nav a {
+        width: auto;
+    }
+    .main-nav a:hover,
+    .main-nav .current {
+        border-bottom: 2px solid #e6bc87;
+        padding-bottom: .5rem;
+        background: none;
+    }
+    .main-nav a::before {
+        content: '';
+    }
+
+ /* Home */
+    .home-hero {
+        padding: 16vw 1rem;
+    }
+    .home-hero h2 {
+        font-size: 2.5rem;
+        margin: 0 0 2rem;
+        background: none;
+        padding: 0;
+    }
+    .home-hero p {
+        width: 38vw;
+    }
+
+    /* Contents */
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 1rem;
+    }
+    .flex-reverse {
+        flex-direction: row-reverse;
+    }
+    .home-text {
+        width: 50vw;
+        margin-bottom: 0;
+    }
+    .home-chart {
+        width: 34vw;
+    }
+
+ /*料金プラン*/
+
+
+    table {
+      border: 0;
+      width:100%
+    }
+    table th{
+      background-color: #e6bc87;
+      display: block;
+      border-right: none;
+      width: 100%;
+    }
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    table tr {
+      display: block;
+      margin-bottom: .625em;
+      width: 100%;
+    }
+
+    table td {
+      border-bottom: 1px solid #bbb;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+      position: relative;
+      padding: .625em .625em .625em 4em;
+      border-right: none;
+      width: 100%;
+    }
+    
+    table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      position: absolute;
+      left: 10px;
+      color: #e6bc87;
+    }
+    table td:last-child {
+      border-bottom: 0;
+    }
+    table tbody th {
+      color: #fff;
+  }
+
+     
+ 
+
+/* Form */
+    label {
+        display: inline-block;
+        margin: 0 1.5rem 0 0;
+    }
+    .select-box {
+        width: 40%;
+    }
+
+/* Footer */
+    
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-nav li {
+        margin: 0.75rem;
+    }
+    .footer-nav a:hover {
+        color: #555;
+    }
+
+}
+
+
+
+
+
+/*countdowontimer*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 78.195%;
+    }
+  }
+  
+  body {
+    font-size: 1.2rem;
+    line-height: 1.75em;
+  }
+  
+  .cdt_wrapper {
+    background-color: #e9e9eb;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .cdt_wrapper {
+      line-height: 2.5;
+      font-size: 1.8rem;
+      padding: 30px 20px;
+      margin: 60px 20px;
+    }
+  }
+  
+  .cdt_wrapper small {
+    font-size: 0.6em;
+    padding: 0 .4em;
+  }
+  
+  .cdt {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .cdt_txt {
+    font-size: .6em;
+    display: inline-block;
+    margin-right: .6em;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .cdt_txt {
+      font-size: .5em;
+    }
+  }
+  
+  .cdt_txt span {
+    display: block;
+    line-height: 1;
+  }
+  
+  .cdt_date {
+    font-size: 1.6rem;
+  }
+  
+  .cdt_num {
+    background-color: #ffffff;
+    padding: 0 .15em;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .cdt_num {
+      line-height: 1;
+      padding: .3em .15em;
+    }
+  }
